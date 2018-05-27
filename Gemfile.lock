@@ -3,6 +3,8 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    archive-zip (0.11.0)
+      io-like (~> 0.3.0)
     byebug (10.0.2)
     capybara (3.1.1)
       addressable
@@ -13,8 +15,14 @@ GEM
       xpath (~> 3.0)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
+    chromedriver-helper (1.2.0)
+      archive-zip (~> 0.10)
+      nokogiri (~> 1.8)
     coderay (1.1.2)
     ffi (1.9.23)
+    io-like (0.3.0)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
@@ -42,6 +50,9 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  chromedriver-helper
+  launchy
+  nokogiri
   pry
   pry-byebug
   selenium-webdriver
