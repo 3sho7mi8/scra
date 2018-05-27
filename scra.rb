@@ -43,7 +43,7 @@ end
 ## 16: pp body
 
 
-start_scraping 'https://www.wantedly.com/enterprise/tickets' do
+start_scraping '****' do
   binding.pry
   p title
   save_and_open_screenshot
