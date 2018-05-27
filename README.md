@@ -1,12 +1,17 @@
 # Scraping Sample
 
+## Installing
 Mac:
 ```
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-
-chrome --headless --disable-gpu --その他のフラグ
+brew install chromedriver
 ```
 
-参照:
-[Headless Chrome をさわってみた](http://www.cyokodog.net/blog/headless-chrome/)
-[RubyとSeleniumでHeadless chromeを動かす on Ubuntu/Linux](https://qiita.com/meguroman/items/41ca17e7dc66d6c88c07)
+## Usage
+
+```
+start_scraping 'https://www.google.com/' do
+  # ここにスクレイピングのコードを書く
+  p title #=> "Google"
+  save_and_open_screenshot
+end
+```
